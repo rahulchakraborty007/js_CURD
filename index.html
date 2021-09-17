@@ -1,0 +1,37 @@
+<html>
+<head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<div class="container">
+  <h2>NEED82 PROJECT</h2>
+  <form>
+    <div class="form-group">
+      <label for="Name">Name </label>
+      <input type="text" class="form-control" id="name">
+    </div>
+    
+    <button type="submit" class="btn btn-primary" onclick="manageData()">Submit</button>
+  </form>
+</div>
+
+<div id="msg"></div>
+
+<h2>DATA</h2>
+<table class="table">
+  <thead>
+    <tr>
+      
+      <td scope="col">Id</td>
+      <td scope="col">Name</td>
+      <td scope="col">Action</td>
+    </tr>
+  </thead>
+  <tbody id="root">
+  </tbody>
+</table>
+
+<script src="index.js"></script>
